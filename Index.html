@@ -1,1 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SofiaSpeaksPoetry</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #2d2d2d;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section h2 {
+      border-bottom: 2px solid #2d2d2d;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+    .poem {
+      background: #fff;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      border-left: 4px solid #2d2d2d;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .gallery img {
+      flex: 1 1 calc(33% - 1rem);
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      border-color: #2d2d2d;
+    }
+    form {
+      background: #fff;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    form label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: 1rem;
+    }
+    form button {
+      margin-top: 1rem;
+      background-color: #2d2d2d;
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    form button:hover {
+      background-color: #444;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background-color: #2d2d2d;
+      color: #fff;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
 
+  <header>
+    <h1>SofiaSpeaksPoetry</h1>
+    <p>Excerpts from my ebook and audiobook collection</p>
+  </header>
+
+  <section>
+    <h2>Poem Excerpts</h2>
+
+    <div class="poem">
+      <h3>Excerpt from "A Trust Misplaced"</h3>
+      <p>In shadows where whispers weave,<br>
+         Promises made, yet hearts deceive,<br>
+         A trust misplaced, a bond betrayed,<br>
+         Lessons linger in the price we paid.</p>
+    </div>
+
+    <div class="poem">
+      <h3>Excerpt from "Strong Women"</h3>
+      <p>She stands when storms rage wild and loud,<br>
+         Her soul unbroken, fierce and proud,<br>
+         A legacy of love and grace,<br>
+         Strength eternal in her embrace.</p>
+    </div>
+
+    <div class="poem">
+      <h3>Excerpt from "I'd Rather"</h3>
+      <p>I’d rather stumble chasing dreams,<br>
+         Than sit in silence, split at seams,<br>
+         I’d rather fight than fade away,<br>
+         And greet the dawn of each new day.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Artwork Gallery</h2>
+    <div class="gallery">
+      <img src="image1.jpg" alt="Poem Illustration 1">
+      <img src="image2.jpg" alt="Poem Illustration 2">
+      <img src="image3.jpg" alt="Poem Illustration 3">
+    </div>
+  </section>
+
+  <section>
+    <h2>Feedback</h2>
+    <p>I’d love to hear what poems, topics, or images you’d like to see in the future! Please share your thoughts below:</p>
+    <form action="#" method="POST">
+      <label for="name">Your Name (optional)</label>
+      <input type="text" id="name" name="name" placeholder="Jane Doe">
+
+      <label for="email">Your Email (optional)</label>
+      <input type="email" id="email" name="email" placeholder="jane@example.com">
+
+      <label for="message">Your Feedback</label>
+      <textarea id="message" name="message" rows="6" placeholder="Tell me what you'd like to see next..."></textarea>
+
+      <button type="submit">Send Feedback</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 SofiaSpeaksPoetry. All rights reserved.
+  </footer>
+
+</body>
+</html>
